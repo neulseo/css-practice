@@ -1,0 +1,14 @@
+* {
+    font-family: 'Heebo', sans-serif;
+}
+
+.navbar {
+    background-color: gold;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px 20px 30px 20px;
+}
