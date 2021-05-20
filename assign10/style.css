@@ -1,3 +1,9 @@
+:root {
+    /* Color */
+    --color-lightgrey: rgb(199, 197, 197);
+}
+
+
 * {
     font-family: 'Heebo', sans-serif;
 }
@@ -30,7 +36,7 @@ body {
 
 .searchbar__box {
     background-color: white;
-    color: rgb(199, 197, 197);
+    color: var(--color-lightgrey);
     font-size: 21px;
     display: flex;
     justify-content: space-between;
@@ -38,7 +44,7 @@ body {
     height: 50px;
     width: 65%;
     border: white;
-    box-shadow: 0px 2px 3px rgb(199, 197, 197);
+    box-shadow: 0px 2px 3px var(--color-lightgrey);
     border-radius: 30px;
     padding: 5px 30px;
     position: absolute;
@@ -58,7 +64,7 @@ body {
 
 input::-webkit-input-placeholder {
     font-size: 20px;
-    color: rgb(199, 197, 197);
+    color: var(--color-lightgrey);
 }
 
 input:focus {
@@ -73,9 +79,15 @@ main {
     padding: 20px 10px;
 }
 
-.headings {
+.box {
+    margin: 10px 0px;
+}
+
+.headings p {
     font-size: 26px;
     font-weight: bolder;
+    margin-top: 16px;
+    margin-bottom: auto;
 }
 
 .book-of-day {
@@ -109,6 +121,10 @@ main {
     font-weight: bolder;
 }
 
+.book-of-day__info-author {
+    color: var(--color-lightgrey);
+}
+
 .book-of-day__info-stars {
     margin: 10px 0px;
 }
@@ -120,10 +136,14 @@ main {
 }
 
 .book-of-day__info-stars i:last-child {
-    color: rgb(199, 197, 197);
+    color: var(--color-lightgrey);
 }
 
 /* Top Adventures */
+.top-adventures {
+    padding: 10px 0px;
+}
+
 .top-adventures__items {
     display: flex;
     flex-direction: row;
@@ -156,6 +176,7 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 10px 0px;
 }
 
 .popoular-authors__cover img {
@@ -170,4 +191,8 @@ main {
 .popular-authors__basic-author {
     font-size: 18px;
     font-weight: bolder;
+}
+
+.popular-authors__basic-intro {
+    color: var(--color-lightgrey);
 }
