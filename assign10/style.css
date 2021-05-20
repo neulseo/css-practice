@@ -69,9 +69,8 @@ input:focus {
 /* main */
 
 main {
-    margin: 50px auto;
+    margin: 33px 20px;
     padding: 20px 10px;
-    border: green 2px solid;
 }
 
 .headings {
@@ -86,15 +85,15 @@ main {
     flex-direction: row;
 }
 
-.book-of-day_cover img {
-    border-radius: 10px;
+.book-of-day__cover img {
+    border-radius: 15px;
 }
 
 .book-of-day__info {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0px 10px;
+    margin: 0px 18px;
 }
 
 .book-of-day__info p {
@@ -108,4 +107,45 @@ main {
 .book-of-day__info-title {
     font-size: 18px;
     font-weight: bolder;
+}
+
+.book-of-day__info-stars {
+    margin: 10px 0px;
+}
+
+.book-of-day__info-stars i {
+    color: gold;
+    margin: 3px;
+    font-size: 14px;
+}
+
+.book-of-day__info-stars i:last-child {
+    color: rgb(199, 197, 197);
+}
+
+/* Top Adventures */
+.top-adventures__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.top-adventures__item {
+    margin-right: 23px;
+}
+
+.top-adventures__item img {
+    border-radius: 10px;
+}
+
+.top-adventures__item-stars {
+    font-size: 10px;
+    color: gold;
+    display: flex;
+    justify-content: center;
+}
+
+.top-adventures__item-stars i {
+    margin: 2px;
 }
