@@ -2,6 +2,12 @@
     font-family: 'Heebo', sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
 .navbar {
     background-color: gold;
     color: rgb(14, 11, 11);
@@ -10,5 +16,57 @@
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    padding: 10px 20px 30px 20px;
+    padding: 10px 50px 30px 50px;
+    overflow: hidden;
+}
+
+.searchbar {
+    border: transparent;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.searchbar__box {
+    background-color: white;
+    color: rgb(199, 197, 197);
+    font-size: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 65%;
+    border: pink 2px solid;
+    border-radius: 30px;
+    padding: 5px 30px;
+    position: absolute;
+    top: -32px;
+}
+
+#header_search {
+    border: transparent;
+}
+
+.searchbar__input {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 20px;
+    color: rgb(199, 197, 197);
+}
+
+input:focus {
+    outline: none;
+}
+
+
+/* main */
+
+main {
+    margin: 50px auto;
 }
