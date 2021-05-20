@@ -90,6 +90,9 @@ main {
     margin-bottom: auto;
 }
 
+
+/* Book of the Day */
+
 .book-of-day {
     /* border: pink 2px solid; */
     padding: 10px 0px;
@@ -137,6 +140,46 @@ main {
 
 .book-of-day__info-stars i:last-child {
     color: var(--color-lightgrey);
+}
+
+.book-of-day__info-btns {
+    width: 300px;
+    height: 20px;
+}
+
+.book-of-day__info-btn {
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+.book-of-day__info-personal {
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.book-of-day__info-personal-save {
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    border: 0;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.book-of-day__info-personal-purchase {
+    border: none;
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    margin: 0px 28px;
+    color: white;
+    background-color: black;
 }
 
 /* Top Adventures */
