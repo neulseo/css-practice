@@ -132,7 +132,7 @@ main {
 }
 
 .top-adventures__item {
-    margin-right: 23px;
+    margin-right: 27px;
 }
 
 .top-adventures__item img {
@@ -148,4 +148,26 @@ main {
 
 .top-adventures__item-stars i {
     margin: 2px;
+}
+
+
+/* Popular Authors */
+.popular-authors {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.popoular-authors__cover img {
+    border-radius: 10px;
+}
+
+.popular-authors__basic {
+    margin-left: 21px;
+    width: 300px;
+}
+
+.popular-authors__basic-author {
+    font-size: 18px;
+    font-weight: bolder;
 }
