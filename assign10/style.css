@@ -37,7 +37,8 @@ body {
     align-items: center;
     height: 50px;
     width: 65%;
-    border: pink 2px solid;
+    border: white;
+    box-shadow: 0px 2px 3px rgb(199, 197, 197);
     border-radius: 30px;
     padding: 5px 30px;
     position: absolute;
@@ -69,4 +70,42 @@ input:focus {
 
 main {
     margin: 50px auto;
+    padding: 20px 10px;
+    border: green 2px solid;
+}
+
+.headings {
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.book-of-day {
+    /* border: pink 2px solid; */
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.book-of-day_cover img {
+    border-radius: 10px;
+}
+
+.book-of-day__info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px 10px;
+}
+
+.book-of-day__info p {
+    margin: 0 0 2px 0;
+}
+
+.book-of-day__info-basic {
+    margin: 0px 0px;
+}
+
+.book-of-day__info-title {
+    font-size: 18px;
+    font-weight: bolder;
 }
