@@ -4,7 +4,7 @@
 
 .navbar {
     background-color: gold;
-    color: black;
+    color: rgb(14, 11, 11);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
