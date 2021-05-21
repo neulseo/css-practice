@@ -43,14 +43,130 @@ body {
 .mainboard {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* border: 2px solid paleturquoise; */
     flex-wrap: wrap;
+    height: 900px;
+    margin: 10px 0px;
+}
+
+/* main-artist */
+.main-artist {
+    display: flex;
+    justify-content: center;
+}
+
+.main-artist__box {
+    text-align: center;
+    width: 300px;
+}
+
+.artist-img img {
+    width: 75px;
+    height: 75px;
+    border-radius: 40px;
+    box-shadow: 0px 1px 10px rgb(252, 147, 98);
+    margin: 10px 0px;
+}
+
+.artist-name {
+    margin: 17px auto 5px;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.artist-genre {
+    margin: 5px auto 15px;
+    color: grey;
+}
+
+.artist-btns {
+    width: 300px;
+    height: 60px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.artist-btns button {
+    margin: 0px 10px;
+    width: 180px;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    border-radius: 65px;
+}
+
+.artist-btn-shuffle {
+    background-color: var(--color-black);
+    color: white;
+}
+
+.artist-btn-hearts {
+    background-color: white;
+    color: grey;
+    box-shadow: 0px 0px 9px 6px var(--color-lightgrey);
+}
+
+.artist-btn-hearts i {
+    font-size: large;
+    color: var(--color-black);
 }
 
 
 /* playlist */
 .playlist {
-    height: 550px;
+    text-decoration: none;
+}
+
+
+.playlist li {
+    display: flex;
+    align-items: center;
+    /* border: 2px solid palegoldenrod; */
+    justify-content: space-between;
+    margin: 10px 0px;
+    width: 95%;
+    height: 79px;
+    line-height: 3.2px;
+    position: static;
+    border-radius: 10px;
+    box-shadow: 0px 9px 6px var(--color-lightgrey);
+}
+
+.playlist-info {
+    left: -40px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.playlist-info p:first-child {
+    color: grey;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.playlist-cover img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.playlist-btn {
+    margin-right: 10px;
+    color: grey;
+}
+
+
+/* playlist */
+.playlist {
+    height: 380px;
     overflow-y: scroll;
     scrollbar-color: rebeccapurple green;
     scrollbar-width: thin;
@@ -63,7 +179,7 @@ body {
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: absolute;
     bottom: -46px;
@@ -74,6 +190,7 @@ body {
 
 .control-box__info {
     line-height: 3.5px;
+    margin: 0px 25px;
 }
 
 .control-box__info-artist {
