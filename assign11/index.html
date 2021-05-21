@@ -97,11 +97,41 @@
     <div class="mainscreen">
         <nav class="navbar">
             <!-- two icons : left arrow & menu -->
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-ellipsis-v"></i>
+            <button><i class="fas fa-arrow-left"></i></button>
+            <button><i class="fas fa-ellipsis-v"></i></button>
         </nav>
         <div class="playboard">
             <!-- 4 outer divs : album-cover, album-detail, play-bar, play-btns -->
+            <div class="album-cover">IMB</div>
+            <div class="album-detail">
+                <div class="album-detail-title">
+                    <p>November</p>
+                </div>
+                <div class="album-detail-artist">
+                    <p>Tyler, The Creator</p>
+                </div>
+            </div>
+            <div class="play-now">
+                <div class="play-now__time">
+                    <p class="play-now__time-played">1:56</p>
+                    <p class="play-now__time-rest">2:21</p>
+                </div>
+                <div class="play-now__bar">
+                    <!-- already played -->
+                    <div class="play-now__bar-played"></div>
+                    <!-- where it is now -->
+                    <div class="play-now__bar-now"></div>
+                    <!-- the rest to be played -->
+                    <div class="play-now__bar-rest"></div>
+                </div>
+            </div>
+            <div class="play-btns">
+                <button><i class="fas fa-redo-alt"></i></button>
+                <button><i class="fas fa-step-backward"></i></button>
+                <button><i class="fas fa-play"></i></button>
+                <button><i class="fas fa-step-forward"></i></button>
+                <button><i class="fas fa-random"></i></button>
+            </div>
         </div>
     </div>
 </body>
