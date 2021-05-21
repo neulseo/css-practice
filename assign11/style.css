@@ -11,17 +11,18 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    overflow-y: scroll;
 }
 
 .mainscreen {
     background-color: white;
-    width: 400px;
-    height: 100vh;
+    width: 26%;
     display: flex;
     flex-direction: column;
     border-radius: 43px;
     padding: 30px;
     box-shadow: 0px 1px 15px rgb(192, 192, 192);
+    position: relative;
 }
 
 .navbar {
@@ -45,7 +46,7 @@ body {
     flex-direction: column;
     /* border: 2px solid paleturquoise; */
     flex-wrap: wrap;
-    height: 900px;
+    height: 700px;
     margin: 10px 0px;
 }
 
@@ -120,15 +121,23 @@ body {
 
 /* playlist */
 .playlist {
-    text-decoration: none;
+    height: 56%;
+    margin-left: -26px;
+    overflow-y: scroll;
 }
 
+.playlist ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
 .playlist li {
     display: flex;
     align-items: center;
     /* border: 2px solid palegoldenrod; */
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 10px 0px;
     width: 95%;
     height: 79px;
@@ -139,10 +148,11 @@ body {
 }
 
 .playlist-info {
-    left: -40px;
-    position: relative;
+    left: -11%;
+    position: static;
     font-size: 16px;
     font-weight: 800;
+
 }
 
 .playlist-info p:first-child {
@@ -164,13 +174,6 @@ body {
 }
 
 
-/* playlist */
-.playlist {
-    height: 380px;
-    overflow-y: scroll;
-    scrollbar-color: rebeccapurple green;
-    scrollbar-width: thin;
-}
 
 /* control-box */
 .control-box {
@@ -182,8 +185,8 @@ body {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    bottom: -46px;
-    width: 400px;
+    bottom: 24px;
+    width: 85.5%;
     height: 67px;
     box-shadow: 0px 1px 10px rgb(192, 192, 192);
 }
@@ -215,4 +218,85 @@ body {
 
 .control-box__btns i:nth-child(2) {
     font-size: 23px;
+}
+
+
+/* Second Screen */
+/* Play board */
+.playboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-cover {
+    margin: 30px auto;
+}
+
+.album-cover img {
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    box-shadow: 2px 6px 15px 1px rgb(252, 147, 98);
+}
+
+.album-detail {
+    border: 2px solid pink;
+    text-align: center;
+    width: 300px;
+    line-height: 5px;
+    margin: 10px 0px;
+}
+
+.album-detail-title {
+    font-size: 29px;
+    font-weight: 900;
+}
+
+/* play-now */
+.play-now {
+    margin: 20px 0px;
+    width: 93%;
+    height: 20px;
+}
+
+
+.play-now__time {
+    display: flex;
+    flex-direction: column;
+}
+
+.play-now__time-box {
+    justify-content: space-between;
+    width: inherit;
+    height: 25px;
+}
+
+.play-now__time-display {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: inherit;
+}
+
+.play-now__time-display p {
+    height: inherit;
+}
+
+.play-now__bar {
+    border: 2px solid blue;
+    margin: 10px;
+    width: inherit;
+}
+
+
+/* play buttons */
+.play-btns {
+    border: 2px solid orange;
+    margin: 30px 0px;
+}
+
+.play-btns button {
+    border: none;
 }
